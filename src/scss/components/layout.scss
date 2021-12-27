@@ -1,0 +1,57 @@
+@use '../utils' as *;
+@use '../globals' as *;
+
+//nav-bar
+
+
+.navbar{
+    position: sticky;
+    .navbar-nav{
+        font-size: rem(18);
+    }
+}
+
+#home{
+    margin: rem(40) 0;
+    .display-1{
+        margin-bottom: rem(15);
+    }
+
+    .d-block{
+        height: rem(600);
+        width: 100%;
+    }
+}
+
+#about{
+    #img-about-1{
+        height: rem(500);
+        width: rem(400);
+    }
+}
+
+#skills{
+    .card{
+        width: rem(150);
+        text-align: center;
+        @include texttheme(white);
+        @include themecolor(var(--grey-dark));
+        margin-left: rem(15);
+        margin-top: rem(30);
+        i{
+            font-size: rem(70);
+        }
+    }
+}
+
+#project{
+    .card{
+        padding-top: rem(20);
+        width: rem(350);
+        text-align: center;
+        margin-left: rem(20);
+        margin-top: rem(30);
+        @include themecolor(var(--grey-dark));
+        @include texttheme(white);
+    }
+}

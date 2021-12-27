@@ -1,0 +1,7 @@
+@mixin texttheme($color:var(--text-color)) {
+    color: $color;
+}
+
+@mixin themecolor($color:var(--text-color)) {
+    background-color: $color;
+}
